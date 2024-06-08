@@ -67,11 +67,35 @@
     top: 80px;
     right: 80px;
   }
+
+  .main-index-nav a {
+    position: relative;
+  }
+
+  .main-index-nav a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    background-color: #0e1b4d;
+    border-radius: 100px;
+    transition: width .5s ease;
+  }
+
+  .main-index-nav a:hover:before {
+    width: 100%;
+    transition: width .5s ease;
+  }
 }
 
 @media screen and (min-width: 1350px) {
   .index- {
     border-width: 50px;
+  }
+
+  .main-index {
+    padding-left: 80px;
   }
 
   .index- .h2 {
@@ -84,7 +108,7 @@
   }
 
   .main-index-nav {
-    top: 100px;
-    right: 100px;
+    top: 150px;
+    right: 150px;
   }
 }

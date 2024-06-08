@@ -15,10 +15,6 @@
   visibility: visible;
 }
 
-cart-drawer {
-  display: none;
-}
-
 .drawer__inner {
   height: 100%;
   width: 40rem;
