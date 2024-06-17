@@ -291,7 +291,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {%- if template.name == 'blog' or template.name == 'article' -%}
+    {%- if template.name == 'blog' or template.name == 'article' or template.name == 'page' -%}
       {% sections 'header-group' %}
     {%- endif -%}
 
@@ -299,7 +299,7 @@
       {{ content_for_layout }}
     </main>
 
-    {%- if template.name == 'blog' or template.name == 'article' -%}
+    {%- if template.name == 'blog' or template.name == 'article' or template.name == 'page' -%}
       {% sections 'footer-group' %}
     {%- endif -%}
 
