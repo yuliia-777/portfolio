@@ -1,0 +1,517 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{{ 'section-work.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="work page-width section-{{ section.id }}-padding">
+  <h1 class="title--primary scroll-trigger animate--fade-in">
+    Work
+  </h1>
+  <div class="blog-articles">
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 1;"
+      bis_skin_checked="1">
+      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+
+        <div
+          class="
+        card article-card
+        card--card
+         article-card__image--medium
+         card--media
+         color-background-1 gradient
+        
+      "
+          style="--ratio-percent: 56.26666666666666%;"
+          bis_skin_checked="1">
+          <div
+            class="card__inner  ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+            bis_skin_checked="1">
+            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
+              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+
+                <img
+                  srcset="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=165 165w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=360 360w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533 533w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=720 720w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1000 1000w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=1500 1500w,//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708 1500w
+                "
+                  src="//goinspired.space/cdn/shop/articles/Unlocking_the_Power_of_SEO.jpg?v=1718127708&amp;width=533"
+                  sizes="(min-width: 1400px) 650px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="Optimizing Your Shopify Product Pages"
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="1500"
+                  height="844">
+
+              </div>
+            </div>
+            <div class="card__content" bis_skin_checked="1">
+              <div class="card__information" bis_skin_checked="1">
+                <h3 class="card__heading h2">
+                  <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                    Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                  <span class="circle-divider">
+                    <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                  </span>
+                </div>
+                <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+                </p>
+                <div class="article-card__footer" bis_skin_checked="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content" bis_skin_checked="1">
+            <div class="card__information" bis_skin_checked="1">
+              <h3 class="card__heading h2">
+                <a href="/blogs/e-commerce-nest/unlocking-the-power-of-seo-optimizing-your-shopify-product-pages" class="full-unstyled-link">
+                  Unlocking the Power of SEO: Optimizing Your Shopify Product Pages
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
+                <span class="circle-divider">
+                  <time datetime="2024-06-11T17:41:47Z">June 11, 2024</time>
+                </span>
+              </div>
+              <p class="article-card__excerpt rte-width">In the bustling world of e-commerce, standing out from the crowd is crucial. With millions of online stores vying for consumer attention, mastering Search Engine Optimization (SEO) is non-negotiable. Among...
+              </p>
+              <div class="article-card__footer" bis_skin_checked="1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Work",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Work"
+      }
+    ]
+  }
+{% endschema %}
