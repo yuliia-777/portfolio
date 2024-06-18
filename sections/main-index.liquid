@@ -15,12 +15,20 @@
 {%- endstyle -%}
 
 <div class="main-index account section-{{ section.id }}-padding">
-  <div class="h2">Hey, I'm Yuliia</div>
+  <div class="h2">
+    {% if shop.locale == 'uk' %}Привіт, я Юля{% else %}Hey, I'm Yuliia{% endif %}
+  </div>
   <div class="divider"></div>
-  <h1 class="main-index__title">Frontend Shopify Developer</h1>
+  <h1 class="main-index__title">
+  {% if shop.locale == 'uk' %}Фронтенд розробниця<br/>на Shopify{% else %}Shopify Frontend Developer{% endif %}
+  </h1>
   <nav class="main-index-nav">
-    <a class="h3" href="/pages/portfolio">Work</a>
-    <a class="h3" href="/blogs/e-commerce-nest">Blog</a>
+    <a class="h3" href="/pages/portfolio">
+      {% if shop.locale == 'uk' %}Роботи{% else %}Work{% endif %}
+    </a>
+    <a class="h3" href="/blogs/e-commerce-nest">
+      {% if shop.locale == 'uk' %}Статті{% else %}Blog{% endif %}
+    </a>
   </nav>
 </div>
 
