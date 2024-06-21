@@ -112,7 +112,7 @@
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
+      style="--animation-order: 2;"
      >
       <div class="article-card-wrapper card-wrapper underline-links-hover">
 
@@ -199,7 +199,7 @@
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
+      style="--animation-order: 3;"
      >
       <div class="article-card-wrapper card-wrapper underline-links-hover">
 
@@ -286,7 +286,7 @@
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
+      style="--animation-order: 4;"
      >
       <div class="article-card-wrapper card-wrapper underline-links-hover">
 
@@ -370,10 +370,10 @@
         </div>
       </div>
     </div>
-    {% comment %} <div
+    <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
+      style="--animation-order: 5;"
      >
       <div class="article-card-wrapper card-wrapper underline-links-hover">
 
@@ -409,13 +409,22 @@
               <div class="card__information">
                 <h3 class="card__heading h2">
                   <a href="https://toromatcha.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                    Shopify Store with the Organic and Sugar-free Matcha Energy Drinks
+                    {%- if shop.locale == 'uk' -%}
+                      Магазин Shopify з органічними енергетичними напоями без цукру
+                    {%- else -%}
+                      Shopify Store with Organic and Sugar-free Energy Drinks
+                    {%- endif -%}
                   </a>
                 </h3>
                 <div class="article-card__info caption-with-letter-spacing h5">
                   <span class="circle-divider">Jan, 2023</span>
                 </div>
-                <p class="article-card__excerpt rte-width">Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid and Shopify app customization.
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Підвищено ефективність продажів завдяки впровадженню нового кастомного меню, підписок та інших функцій для канадського магазину енергетичних напоїв з використанням таких технологій, як HTML5, CSS, JQuery, Liquid та кастомізація додатку для Shopify.
+                  {%- else -%}
+                    Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid and Shopify app customization.
+                  {%- endif -%}
                 </p>
                 <div class="article-card__footer"></div>
               </div>
@@ -425,24 +434,33 @@
             <div class="card__information">
               <h3 class="card__heading h2">
                 <a href="https://toromatcha.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                  Shopify store with the Organic and sugar-free Matcha Energy Drinks
+                  {%- if shop.locale == 'uk' -%}
+                    Магазин Shopify з органічними енергетичними напоями без цукру
+                  {%- else -%}
+                    Shopify Store with Organic and Sugar-free Energy Drinks
+                  {%- endif -%}
                 </a>
               </h3>
               <div class="article-card__info caption-with-letter-spacing h5">
                 <span class="circle-divider">Jan, 2023</span>
               </div>
-              <p class="article-card__excerpt rte-width">Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid and Shopify app customization.
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Підвищено ефективність продажів завдяки впровадженню нового кастомного меню, підписок та інших функцій для канадського магазину енергетичних напоїв з використанням таких технологій, як HTML5, CSS, JQuery, Liquid та кастомізація додатку для Shopify.
+                {%- else -%}
+                  Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid and Shopify app customization.
+                {%- endif -%}
               </p>
               <div class="article-card__footer"></div>
             </div>
           </div>
         </div>
       </div>
-    </div> {% endcomment %}
-    {% comment %} <div
+    </div>
+    <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
+      style="--animation-order: 6;"
      >
       <div class="article-card-wrapper card-wrapper underline-links-hover">
 
@@ -478,13 +496,22 @@
               <div class="card__information">
                 <h3 class="card__heading h2">
                   <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                    Canada's Shopify Store for Buying and Renting Dresses
+                    {%- if shop.locale == 'uk' -%}
+                      Елітні засоби для догляду за волоссям, відзначені багатьма нагородами
+                    {%- else -%}
+                      Multi-Awarded Luxury Hair Care Products
+                    {%- endif -%}
                   </a>
                 </h3>
                 <div class="article-card__info caption-with-letter-spacing h5">
-                  <span class="circle-divider">Dec, 2022</span>
+                  <span class="circle-divider">Nov, 2022</span>
                 </div>
-                <p class="article-card__excerpt rte-width">New Design and Functionality implementation for Boosting Sales for Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid and Shopify apps customization.
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Нові функції: Індивідуальний кошик з рекомендованими товарами, реалізація персоналізованої сторінки товару та ін., що дозволило збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                  {%- else -%}
+                    New Features: Custom Cart with Recommended Products, Personalized Product Page implementation ect. that allowed to increase Sales, using such technologies as HTML5, CSS, JavaScript and Liquid.
+                  {%- endif -%}
                 </p>
                 <div class="article-card__footer"></div>
               </div>
@@ -494,20 +521,29 @@
             <div class="card__information">
               <h3 class="card__heading h2">
                 <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                  Canada's Shopify Store for Buying and Renting Dresses
+                  {%- if shop.locale == 'uk' -%}
+                    Елітні засоби для догляду за волоссям, відзначені багатьма нагородами
+                  {%- else -%}
+                    Multi-Awarded Luxury Hair Care Products
+                  {%- endif -%}
                 </a>
               </h3>
               <div class="article-card__info caption-with-letter-spacing h5">
-                <span class="circle-divider">Dec, 2022</span>
+                <span class="circle-divider">Nov, 2022</span>
               </div>
-              <p class="article-card__excerpt rte-width">New Design and Functionality implementation for Boosting Sales for Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid and Shopify apps customization.
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Нові функції: Індивідуальний кошик з рекомендованими товарами, реалізація персоналізованої сторінки товару та ін., що дозволило збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                {%- else -%}
+                  New Features: Custom Cart with Recommended Products, Personalized Product Page implementation ect. that allowed to increase Sales, using such technologies as HTML5, CSS, JavaScript and Liquid.
+                {%- endif -%}
               </p>
               <div class="article-card__footer"></div>
             </div>
           </div>
         </div>
       </div>
-    </div> {% endcomment %}
+    </div>
 
 </div>
 

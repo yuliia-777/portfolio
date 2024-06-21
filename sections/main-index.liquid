@@ -23,10 +23,10 @@
   {% if shop.locale == 'uk' %}Фронтенд розробниця<br/>на Shopify{% else %}Shopify Frontend Developer{% endif %}
   </h1>
   <nav class="main-index-nav">
-    <a class="h3" href="/pages/portfolio">
+    <a class="h3" href="{% if shop.locale == 'uk' %}/uk{% endif %}/pages/portfolio">
       {% if shop.locale == 'uk' %}Роботи{% else %}Work{% endif %}
     </a>
-    <a class="h3" href="/blogs/e-commerce-nest">
+    <a class="h3" href="{% if shop.locale == 'uk' %}/uk{% endif %}/blogs/e-commerce-nest">
       {% if shop.locale == 'uk' %}Статті{% else %}Blog{% endif %}
     </a>
   </nav>
