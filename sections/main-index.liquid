@@ -22,14 +22,22 @@
   <h1 class="main-index__title">
   {% if shop.locale == 'uk' %}Фронтенд розробниця<br/>на Shopify{% else %}Shopify Frontend Developer{% endif %}
   </h1>
-  <nav class="main-index-nav">
+  <nav class="main-index-nav main-index-nav--top">
     <a class="h3" href="{% if shop.locale == 'uk' %}/uk{% endif %}/pages/portfolio">
-      {% if shop.locale == 'uk' %}Роботи{% else %}Work{% endif %}
+      {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
     </a>
     <a class="h3" href="{% if shop.locale == 'uk' %}/uk{% endif %}/blogs/e-commerce-nest">
       {% if shop.locale == 'uk' %}Статті{% else %}Blog{% endif %}
     </a>
   </nav>
+  <div class="main-index-nav main-index-nav--bottom">
+    <a class="h3" href="https://www.linkedin.com/in/yuliia-aleksiienko?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
+      Linkedin
+    </a>
+    <a class="h3" href="https://www.upwork.com/freelancers/~01a3dbef6c702b2f36?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
+      Upwork
+    </a>
+  </div>
 </div>
 
 {% schema %}

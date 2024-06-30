@@ -38,10 +38,17 @@
 
 .main-index-nav {
   position: absolute;
-  top: 30px;
   right: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.main-index-nav--top {
+  top: 30px;
+}
+
+.main-index-nav--bottom {
+  bottom: 30px;
 }
 
 .main-index-nav a {
@@ -72,8 +79,15 @@
   }
 
   .main-index-nav {
-    top: 80px;
     right: 80px;
+  }
+
+  .main-index-nav--top {
+    top: 80px;
+  }
+  
+  .main-index-nav--bottom {
+    bottom: 80px;
   }
 
   .main-index-nav a {
@@ -111,7 +125,14 @@
   }
 
   .main-index-nav {
-    top: 150px;
     right: 150px;
+  }
+
+  .main-index-nav--top {
+    top: 150px;
+  }
+  
+  .main-index-nav--bottom {
+    bottom: 150px;
   }
 }

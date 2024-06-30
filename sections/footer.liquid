@@ -332,6 +332,26 @@
             {%- endform -%}
           </localization-form>
         {%- endif -%}
+
+        <div class="footer__nav">
+
+          {%- if template.name == 'page' %}
+            <a class="caption-large text-body" href="{% if shop.locale == 'uk' %}/uk{% endif %}/blogs/e-commerce-nest">
+              {% if shop.locale == 'uk' %}Статті{% else %}Blog{% endif %}
+            </a>
+          {%- else -%}
+            <a class="caption-large text-body" href="{% if shop.locale == 'uk' %}/uk{% endif %}/pages/portfolio">
+              {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
+            </a>
+          {%- endif -%}
+
+          <a class="caption-large text-body" href="https://www.linkedin.com/in/yuliia-aleksiienko?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
+            Linkedin
+          </a>
+          <a class="caption-large" href="https://www.upwork.com/freelancers/~01a3dbef6c702b2f36?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
+            Upwork
+          </a>
+        </div>
       </div>
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
