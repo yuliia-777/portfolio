@@ -3,6 +3,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
+        "color_scheme": "scheme-11135f94-9a5c-4a18-8298-bf2c7a69079d",
         "layout": "grid",
         "show_image": true,
         "image_height": "medium",

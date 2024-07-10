@@ -1,5 +1,13 @@
 .footer {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /* border-top: 0.1rem solid rgba(var(--color-foreground), 0.08); */
+}
+
+.footer__content-bottom {
+  border-top: 1px solid #564816 !important;
+}
+
+.index- .footer__content-bottom {
+  border-top: 0 !important;
 }
 
 .footer:not(.color-background-1) {

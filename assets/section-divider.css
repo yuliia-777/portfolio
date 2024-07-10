@@ -1,0 +1,15 @@
+.divider {
+  overflow: hidden;
+  padding: 22px 0;
+  border-top: 1px solid #61453A;
+  border-bottom: 1px solid #61453A;
+}
+
+.divider-text {
+  white-space: nowrap;
+  margin: 0;
+}
+
+.divider-text * {
+ margin: 0;
+}

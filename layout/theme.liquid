@@ -252,6 +252,17 @@
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+
+        color: #61453A;
+        background-color: #EEFEEF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .gradient {
+        background-color: #EEFEEF;
+        background: #EEFEEF !important;
       }
 
       @media screen and (min-width: 750px) {
@@ -301,9 +312,9 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {%- if template.name == 'blog' or template.name == 'article' or template.name == 'page' -%}
+    
       {% sections 'header-group' %}
-    {%- endif -%}
+   
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
