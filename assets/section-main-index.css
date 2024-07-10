@@ -4,6 +4,14 @@
   height: 100vh;
   border: 10px solid #0e1b4d;
   padding: 20px;
+  overflow: hidden;
+}
+
+.index- .footer {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
 }
 
 .index- .h2 {
@@ -30,10 +38,17 @@
 
 .main-index-nav {
   position: absolute;
-  top: 30px;
   right: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.main-index-nav--top {
+  top: 30px;
+}
+
+.main-index-nav--bottom {
+  bottom: 30px;
 }
 
 .main-index-nav a {
@@ -64,8 +79,15 @@
   }
 
   .main-index-nav {
-    top: 80px;
     right: 80px;
+  }
+
+  .main-index-nav--top {
+    top: 80px;
+  }
+  
+  .main-index-nav--bottom {
+    bottom: 80px;
   }
 
   .main-index-nav a {
@@ -99,16 +121,18 @@
   }
 
   .index- .h2 {
-    font-size: 60px;
     margin-top: 80px;
   }
 
-  .index- h1 {
-    font-size: 120px;
+  .main-index-nav {
+    right: 150px;
   }
 
-  .main-index-nav {
+  .main-index-nav--top {
     top: 150px;
-    right: 150px;
+  }
+  
+  .main-index-nav--bottom {
+    bottom: 150px;
   }
 }

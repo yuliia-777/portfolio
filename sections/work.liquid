@@ -19,15 +19,15 @@
 
 <div class="work page-width section-{{ section.id }}-padding">
   <h1 class="title--primary scroll-trigger animate--fade-in">
-    Portfolio
+    {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
   </h1>
   <div class="blog-articles">
+
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
-      bis_skin_checked="1">
-      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+      style="--animation-order: 1;">
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
 
         <div
           class="
@@ -38,54 +38,72 @@
           color-background-1 gradient
         "
           style="--ratio-percent: 56.26666666666666%;"
-          bis_skin_checked="1">
+        >
           <div
             class="card__inner ratio"
             style="--ratio-percent: 56.26666666666666%;"
-            bis_skin_checked="1">
-            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
-              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+          >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
                 <img
-                  src="{{ 'Maison-Lprn.png' |  file_img_url: 'original' }}"
-                  alt="Canada's Shopify Store for Buying and Renting Dresses"
+                  src="{{ 'Material-Good.png' |  file_img_url: 'original' }}"
+                  alt="US Shopify Store for Branded Jewelry and Watches"
                   class="motion-reduce"
                   {% unless lazy_load == false %}
                     loading="lazy"
                   {% endunless %}
-                  width="1860"
-                  height="901"
+                  width="1200"
+                  height="560"
                 >
               </div>
             </div>
-            <div class="card__content" bis_skin_checked="1">
-              <div class="card__information" bis_skin_checked="1">
+            <div class="card__content">
+              <div class="card__information">
                 <h3 class="card__heading h2">
-                  <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                    Canada's Shopify Store for Buying and Renting Dresses
+                  <a href="https://materialgood.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Магазин Shopify у США для брендових ювелірних виробів та годинників
+                    {%- else -%}
+                      US Shopify Store for Branded Jewelry and Watches
+                    {%- endif -%}
                   </a>
                 </h3>
-                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
-                  <span class="circle-divider">Dec, 2022</span>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Jan, 2022</span>
                 </div>
-                <p class="article-card__excerpt rte-width">New Design and Functionality implementation for Boosting Sales for Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid and Shopify apps customization.
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Кастомізація теми Shopify: Для цього магазину були розроблені нові сторінки, кастомні форми, функціонал Drop a Hint та Wishlist, шаблони електронної пошти Klaviyo, кастомні шаблони електронної пошти, підтримка веб-сайту та оптимізація швидкості роботи.
+                  {%- else -%}
+                    Shopify Theme Customization: New pages, Custom forms, Drop a Hint and Wishlist features, Klaviyo email templates, Custom email templates, Website support, and Speed Optimization were used for this store.
+                  {%- endif -%}
                 </p>
-                <div class="article-card__footer" bis_skin_checked="1"></div>
+                <div class="article-card__footer"></div>
               </div>
             </div>
           </div>
-          <div class="card__content" bis_skin_checked="1">
-            <div class="card__information" bis_skin_checked="1">
+          <div class="card__content">
+            <div class="card__information">
               <h3 class="card__heading h2">
-                <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                  Canada's Shopify Store for Buying and Renting Dresses
+                <a href="https://materialgood.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Магазин Shopify у США для брендових ювелірних виробів та годинників
+                  {%- else -%}
+                    US Shopify Store for Branded Jewelry and Watches
+                  {%- endif -%}
                 </a>
               </h3>
-              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
-                <span class="circle-divider">Dec, 2022</span>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Jan, 2022</span>
               </div>
-              <p class="article-card__excerpt rte-width">New Design and Functionality implementation for Boosting Sales for Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid and Shopify apps customization.
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Кастомізація теми Shopify: Для цього магазину були розроблені нові сторінки, кастомні форми, функціонал Drop a Hint та Wishlist, шаблони електронної пошти Klaviyo, кастомні шаблони електронної пошти, підтримка веб-сайту та оптимізація швидкості роботи.
+                {%- else -%}
+                  Shopify Theme Customization: New pages, Custom forms, Drop a Hint and Wishlist features, Klaviyo email templates, Custom email templates, Website support, and Speed Optimization were used for this store.
+                {%- endif -%}
               </p>
-              <div class="article-card__footer" bis_skin_checked="1"></div>
+              <div class="article-card__footer"></div>
             </div>
           </div>
         </div>
@@ -94,9 +112,9 @@
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
       data-cascade=""
-      style="--animation-order: 1;"
-      bis_skin_checked="1">
-      <div class="article-card-wrapper card-wrapper underline-links-hover" bis_skin_checked="1">
+      style="--animation-order: 2;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
 
         <div
           class="
@@ -107,54 +125,768 @@
           color-background-1 gradient
         "
           style="--ratio-percent: 56.26666666666666%;"
-          bis_skin_checked="1">
+         >
           <div
             class="card__inner ratio"
             style="--ratio-percent: 56.26666666666666%;"
-            bis_skin_checked="1">
-            <div class="article-card__image-wrapper card__media" bis_skin_checked="1">
-              <div class="article-card__image media media--hover-effect" bis_skin_checked="1">
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
                 <img
                   src="{{ 'Careers-Fable-Home.png' |  file_img_url: 'original' }}"
+                  alt="Canadian Multimarket Store for authentic Tableware"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://fable.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Канадський мультимаркет автентичного посуду
+                    {%- else -%}
+                    Canadian Multimarket Store for Authentic Tableware
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Aug, 2022</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Розробка посадкових сторінок для маркетингових кампаній для міжнародного магазину Shopify Plus з використанням технологій HTML5, SCSS (з бібліотекою Tailwind), JavaScript та Liquid.
+                  {%- else -%}
+                    New Pages and Promotions Landing Pages development for Marketing campaigns for the Shopify Plus international store, using such technologies as HTML5, SCSS (with Tailwind library), JavaScript, and Liquid.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://fable.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Канадський мультимаркет автентичного посуду
+                  {%- else -%}
+                    Canadian Multimarket Store for Authentic Tableware
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Aug, 2022</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Розробка посадкових сторінок для маркетингових кампаній для міжнародного магазину Shopify Plus з використанням технологій HTML5, SCSS (з бібліотекою Tailwind), JavaScript та Liquid.
+                {%- else -%}
+                  New Pages and Promotions Landing Pages development for Marketing campaigns for the Shopify Plus international store, using such technologies as HTML5, SCSS (with Tailwind library), JavaScript, and Liquid.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 3;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'PetHQ.png' |  file_img_url: 'original' }}"
+                  alt="Shopify B2B Store Setup for the UAE"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://pethq.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Один з найбільших B2B зоомагазинів в ОАЕ
+                    {%- else -%}
+                      One of the Largest B2B Pet Stores Based in the UAE
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Oct, 2023</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Кастомна тема та повна інсталяція Shopify Plus магазину для бізнесу та інтеграція з PIM, використовуючи всі найновіші функції Shopify. Б2С-клієнти мають доступ лише до посадкової сторінки, доки не зареєструються та не отримають повний доступ до магазину.
+                  {%- else -%}
+                    Custom Theme and Complete Shopify Plus B2B Store Setup and PIM integration utilizing the latest Shopify features. B2C Customers have access only to the Landing Page until they register and approve full access to the store.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://pethq.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Один з найбільших B2B зоомагазинів в ОАЕ
+                  {%- else -%}
+                    One of the Largest B2B Pet Stores Based in the UAE
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Oct, 2023</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Кастомна тема та повна інсталяція Shopify Plus магазину для бізнесу та інтеграція з PIM, використовуючи всі найновіші функції Shopify. Б2С-клієнти мають доступ лише до посадкової сторінки, доки не зареєструються та не отримають повний доступ до магазину.
+                {%- else -%}
+                  Custom Theme and Complete Shopify Plus B2B Store Setup and PIM integration utilizing the latest Shopify features. B2C Customers have access only to the Landing Page until they register and approve full access to the store.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 4;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'Maison-Lprn.png' |  file_img_url: 'original' }}"
                   alt="Canada's Shopify Store for Buying and Renting Dresses"
                   class="motion-reduce"
                   {% unless lazy_load == false %}
                     loading="lazy"
                   {% endunless %}
-                  width="1824"
-                  height="733"
+                  width="1200"
+                  height="560"
                 >
               </div>
             </div>
-            <div class="card__content" bis_skin_checked="1">
-              <div class="card__information" bis_skin_checked="1">
+            <div class="card__content">
+              <div class="card__information">
                 <h3 class="card__heading h2">
-                  <a href="https://fable.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                    Canadian Multimarket Store for Tableware and Dinnerware
+                  <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Канадський магазин Shopify для купівлі та оренди суконь
+                    {%- else -%}
+                      Canada's Shopify Store for Buying and Renting Dresses
+                    {%- endif -%}
                   </a>
                 </h3>
-                <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
-                  <span class="circle-divider">Aug, 2022</span>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Dec, 2022</span>
                 </div>
-                <p class="article-card__excerpt rte-width">New Pages and Promotions Landing Pages development for Marketing campaigns for Shopify Plus international store, using such technologies as HTML5, SCSS (with Tailwind library), JavaScript and Liquid.
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Реалізація нового дизайну та функціоналу для збільшення продажів для канадського магазину одягу з використанням таких технологій, як HTML5, CSS, JavaScript, Liquid та кастомізація додатків Shopify.
+                  {%- else -%}
+                  New Design and Functionality implementation for Boosting Sales for the Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid, and Shopify app customization.
+                  {%- endif -%}
                 </p>
-                <div class="article-card__footer" bis_skin_checked="1"></div>
+                <div class="article-card__footer"></div>
               </div>
             </div>
           </div>
-          <div class="card__content" bis_skin_checked="1">
-            <div class="card__information" bis_skin_checked="1">
+          <div class="card__content">
+            <div class="card__information">
               <h3 class="card__heading h2">
-                <a href="https://fable.com" class="full-unstyled-link" target="_blank" rel="noopener">
-                  Canadian Multimarket Store for Tableware and Dinnerware
+                <a href="https://maisonlprn.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Канадський магазин Shopify для купівлі та оренди суконь
+                  {%- else -%}
+                    Canada's Shopify Store for Buying and Renting Dresses
+                  {%- endif -%}
                 </a>
               </h3>
-              <div class="article-card__info caption-with-letter-spacing h5" bis_skin_checked="1">
-                <span class="circle-divider">Aug, 2022</span>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Dec, 2022</span>
               </div>
-              <p class="article-card__excerpt rte-width">New Pages and Promotions Landing Pages development for Marketing campaigns for Shopify Plus international store, using such technologies as HTML5, SCSS (with Tailwind library), JavaScript and Liquid.
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Реалізація нового дизайну та функціоналу для збільшення продажів для канадського магазину одягу з використанням таких технологій, як HTML5, CSS, JavaScript, Liquid та кастомізація додатків Shopify.
+                {%- else -%}
+                New Design and Functionality implementation for Boosting Sales for the Canadian Dress Store, using such technologies as HTML5, CSS, JavaScript, Liquid, and Shopify app customization.
+                {%- endif -%}
               </p>
-              <div class="article-card__footer" bis_skin_checked="1"></div>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 5;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'codelovelingerie.png' |  file_img_url: 'original' }}"
+                  alt="Premium Trendy Lingerie for Women"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://www.codelovelingerie.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Магазин Shopify з модною жіночою білизною преміум-класу
+                    {%- else -%}
+                      Shopify Store with Premium Trendy Lingerie for Women
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Jan, 2023</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Кастомізація та оптимізація теми Shopify з подальшим збільшенням продажів для канадського магазину жіночої білизни Shopify з використанням таких технологій, як HTML5, CSS, Alpine JS та Liquid.
+                  {%- else -%}
+                    Shopify Theme Customization and Optimization with the Subsequent increase in sales for the Canadian Shopify Lingerie Store using such technologies as HTML5, CSS, Alpine JS, and Liquid.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://www.codelovelingerie.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Магазин Shopify з модною жіночою білизною преміум-класу
+                  {%- else -%}
+                    Shopify Store with Premium Trendy Lingerie for Women
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Jan, 2023</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Кастомізація та оптимізація теми Shopify з подальшим збільшенням продажів для канадського магазину жіночої білизни Shopify з використанням таких технологій, як HTML5, CSS, Alpine JS та Liquid.
+                {%- else -%}
+                  Shopify Theme Customization and Optimization with the Subsequent increase in sales for the Canadian Shopify Lingerie Store using such technologies as HTML5, CSS, Alpine JS, and Liquid.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 6;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'Tosca_style.png' |  file_img_url: 'original' }}"
+                  alt="Multi-Awarded Luxury Hair Care Products"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://toscastyle.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Елітні засоби для догляду за волоссям, відзначені багатьма нагородами
+                    {%- else -%}
+                      Multi-Awarded Luxury Hair Care Products built on Shopify
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Nov, 2022</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Нові функції: Кастомний кошик з рекомендованими товарами та функціоналом стрічки доставки, реалізація персоналізованої сторінки товару, що дозволило збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                  {%- else -%}
+                    New Features: Custom Cart with Recommended Products and Shipping bar functionality, Personalized Product Page implementation, that allowed to increase Sales, using such technologies as HTML5, CSS, JavaScript, and Liquid.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://toscastyle.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Елітні засоби для догляду за волоссям, відзначені багатьма нагородами
+                  {%- else -%}
+                    Multi-Awarded Luxury Hair Care Products built on Shopify
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Nov, 2022</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Нові функції: Кастомний кошик з рекомендованими товарами та функціоналом стрічки доставки, реалізація персоналізованої сторінки товару, що дозволило збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                {%- else -%}
+                  New Features: Custom Cart with Recommended Products and Shipping bar functionality, Personalized Product Page implementation, that allowed to increase Sales, using such technologies as HTML5, CSS, JavaScript, and Liquid.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 7;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'sparkle-lighting.png' |  file_img_url: 'original' }}"
+                  alt="Sparkle is an online retailer offering carefully selected decorative lighting"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://sparkle.lighting" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Sparkle - це інтернет-магазин, що пропонує декоративне освітлення
+                    {%- else -%}
+                      Sparkle is an online retailer offering decorative lighting
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Nov, 2022</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Допомога у виборі теми, яка покриває всі потреби бізнесу, а також впровадження деяких функцій, які дозволили збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                  {%- else -%}
+                    Assistance in choosing a theme that covers all business needs and implementing some features that allowed to increase sales using such technologies as HTML5, CSS, JavaScript, and Liquid.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://sparkle.lighting" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Sparkle - це інтернет-магазин, що пропонує декоративне освітлення
+                  {%- else -%}
+                    Sparkle is an online retailer offering decorative lighting
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Nov, 2022</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Допомога у виборі теми, яка покриває всі потреби бізнесу, а також впровадження деяких функцій, які дозволили збільшити продажі, використовуючи такі технології, як HTML5, CSS, JavaScript та Liquid.
+                {%- else -%}
+                  Assistance in choosing a theme that covers all business needs and implementing some features that allowed to increase sales using such technologies as HTML5, CSS, JavaScript, and Liquid.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 8;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'Toro_Matcha.png' |  file_img_url: 'original' }}"
+                  alt="Shopify store with the Organic and sugar-free Energy Drinks"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://toromatcha.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Магазин Shopify з органічними енергетичними напоями без цукру
+                    {%- else -%}
+                      Organic and Sugar-free Energy Drinks Shopify Store
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Jan, 2023</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Підвищено ефективність продажів завдяки впровадженню нового кастомного меню, підписок та інших функцій для канадського магазину енергетичних напоїв з використанням таких технологій, як HTML5, CSS, JQuery, Liquid та кастомізація додатку для Shopify.
+                  {%- else -%}
+                    Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid, and Shopify app customization.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://toromatcha.com" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Магазин Shopify з органічними енергетичними напоями без цукру
+                  {%- else -%}
+                    Organic and Sugar-free Energy Drinks Shopify Store
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Jan, 2023</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Підвищено ефективність продажів завдяки впровадженню нового кастомного меню, підписок та інших функцій для канадського магазину енергетичних напоїв з використанням таких технологій, як HTML5, CSS, JQuery, Liquid та кастомізація додатку для Shopify.
+                {%- else -%}
+                  Increased Conversions by implementing a new Custom menu, Subscriptions, and Other Features for a Canadian Energy Drink Store using such technologies as HTML5, CSS, JQuery, Liquid, and Shopify app customization.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 10;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'VELO_Ukraine.png' |  file_img_url: 'original' }}"
+                  alt="VELO nicotine pouches in Ukraine"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://go-velo.com.ua" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      Нікотинові подушечки VELO в Україні, Офіційний сайт на Shopify
+                    {%- else -%}
+                      VELO nicotine pouches in Ukraine, Official Shopify store
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Jan, 2023</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Розробка нової кастомної теми з нуля та повне налаштування магазину Shopify Plus. Реалізація нового функціоналу для збільшення продажів за допомогою таких технологій, як HTML5, CSS, JQuery та Liquid.
+                  {%- else -%}
+                    New Custom Theme Development from scratch and Complete Shopify Plus Store Setup. New Functionality implementation for Boosting Sales using such technologies as HTML5, CSS, JQuery, and Liquid.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://go-velo.com.ua" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    Нікотинові подушечки VELO в Україні, Офіційний сайт на Shopify
+                  {%- else -%}
+                    VELO nicotine pouches in Ukraine, Official Shopify store
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Jan, 2023</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Розробка нової кастомної теми з нуля та повне налаштування магазину Shopify Plus. Реалізація нового функціоналу для збільшення продажів за допомогою таких технологій, як HTML5, CSS, JQuery та Liquid.
+                {%- else -%}
+                  New Custom Theme Development from scratch and Complete Shopify Plus Store Setup. New Functionality implementation for Boosting Sales using such technologies as HTML5, CSS, JQuery, and Liquid.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="blog-articles__article article scroll-trigger animate--slide-in"
+      data-cascade=""
+      style="--animation-order: 9;"
+     >
+      <div class="article-card-wrapper card-wrapper underline-links-hover">
+
+        <div
+          class="
+          card article-card
+          card--card
+          article-card__image--medium
+          card--media
+          color-background-1 gradient
+        "
+          style="--ratio-percent: 56.26666666666666%;"
+         >
+          <div
+            class="card__inner ratio"
+            style="--ratio-percent: 56.26666666666666%;"
+           >
+            <div class="article-card__image-wrapper card__media">
+              <div class="article-card__image media media--hover-effect">
+                <img
+                  src="{{ 'glo_Ukraine.png' |  file_img_url: 'original' }}"
+                  alt="glo™ Tobacco heating system from BAT"
+                  class="motion-reduce"
+                  {% unless lazy_load == false %}
+                    loading="lazy"
+                  {% endunless %}
+                  width="1200"
+                  height="560"
+                >
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="card__information">
+                <h3 class="card__heading h2">
+                  <a href="https://myglo.com.ua" class="full-unstyled-link" target="_blank" rel="noopener">
+                    {%- if shop.locale == 'uk' -%}
+                      glo™ Система нагрівання тютюну від BAT, Офіційний сайт
+                    {%- else -%}
+                      glo™ Tobacco heating system from BAT, Official site
+                    {%- endif -%}
+                  </a>
+                </h3>
+                <div class="article-card__info caption-with-letter-spacing h5">
+                  <span class="circle-divider">Jan, 2024</span>
+                </div>
+                <p class="article-card__excerpt rte-width">
+                  {%- if shop.locale == 'uk' -%}
+                    Налаштування теми Shopify: Для цього магазину були використані нові сторінки, кастомні форми, функції підписки та запрошення друзів, рекламні банери, карта сайту, виправлення помилок, а також підтримка та обслуговування сайту.
+                  {%- else -%}
+                    Shopify Theme Customization: New pages, Custom forms, Subscription and Invite a friend features, Promotion banners, Sitemap, Bug fixes, and Website support and Maintenance were used for this store.
+                  {%- endif -%}
+                </p>
+                <div class="article-card__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__content">
+            <div class="card__information">
+              <h3 class="card__heading h2">
+                <a href="https://myglo.com.ua" class="full-unstyled-link" target="_blank" rel="noopener">
+                  {%- if shop.locale == 'uk' -%}
+                    glo™ Система нагрівання тютюну від BAT, Офіційний сайт
+                  {%- else -%}
+                    glo™ Tobacco heating system from BAT, Official site
+                  {%- endif -%}
+                </a>
+              </h3>
+              <div class="article-card__info caption-with-letter-spacing h5">
+                <span class="circle-divider">Jan, 2024</span>
+              </div>
+              <p class="article-card__excerpt rte-width">
+                {%- if shop.locale == 'uk' -%}
+                  Налаштування теми Shopify: Для цього магазину були використані нові сторінки, кастомні форми, функції підписки та запрошення друзів, рекламні банери, карта сайту, виправлення помилок, а також підтримка та обслуговування сайту.
+                {%- else -%}
+                  Shopify Theme Customization: New pages, Custom forms, Subscription and Invite a friend features, Promotion banners, Sitemap, Bug fixes, and Website support and Maintenance were used for this store.
+                {%- endif -%}
+              </p>
+              <div class="article-card__footer"></div>
             </div>
           </div>
         </div>

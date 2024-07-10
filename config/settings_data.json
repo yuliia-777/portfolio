@@ -1,9 +1,10 @@
 {
   "current": {
     "logo_width": 140,
-    "type_header_font": "montserrat_i7",
+    "favicon": "shopify:\/\/shop_images\/logo_ya_25f51e9e-af29-4f30-b40a-d385432574d7.svg",
+    "type_header_font": "montserrat_n6",
     "heading_scale": 110,
-    "type_body_font": "questrial_n4",
+    "type_body_font": "lato_n4",
     "body_scale": 105,
     "page_width": 1400,
     "spacing_sections": 0,
