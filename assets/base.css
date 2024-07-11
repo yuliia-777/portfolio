@@ -2377,7 +2377,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #564816;
+  border-bottom: 1px solid var(--custom-border-color);
 }
 
 @media screen and (max-width: 749px) {

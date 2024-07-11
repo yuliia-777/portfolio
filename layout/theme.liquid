@@ -85,6 +85,12 @@
           endif
         %}
 
+        --custom-color: #61453A;
+
+        --custom-border-color: #61453A;
+
+        --custom-background: #EEFEEF; 
+
         --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
         --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
@@ -253,16 +259,16 @@
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
 
-        color: #61453A;
-        background-color: #EEFEEF;
+        color: var(--custom-color); 
+        background-color: var(--custom-background);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
 
-      .gradient {
-        background-color: #EEFEEF;
-        background: #EEFEEF !important;
+      html .gradient {
+        background-color: var(--custom-background); 
+        background: var(--custom-background);
       }
 
       @media screen and (min-width: 750px) {
