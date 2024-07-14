@@ -17,7 +17,8 @@
 {%- endstyle -%}
 
 {%- paginate blog.articles by 12 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
+  <div class="main-blog section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+    <div class="page-width">
     <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {% if shop.locale == 'uk' %}Джерело{% else %}The Nest{% endif %}
     </h1>
@@ -48,6 +49,7 @@
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
   </div>
+  </div>
 {%- endpaginate -%}
 
 {% schema %}
@@ -56,6 +58,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"

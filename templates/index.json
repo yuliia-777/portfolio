@@ -1,14 +1,26 @@
 {
   "sections": {
     "main": {
-      "type": "main-index",
+      "type": "main-index-two",
       "settings": {
+        "color_scheme": "scheme-11135f94-9a5c-4a18-8298-bf2c7a69079d",
+        "image": "shopify:\/\/shop_images\/Mask_group_1.png",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "divider_LWirRi": {
+      "type": "divider",
+      "settings": {
+        "color_scheme": "scheme-ece64925-0259-44bf-9fd5-1159b66baf66",
+        "text": "<h4>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices<\/em><\/h4>",
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "divider_LWirRi"
   ]
 }

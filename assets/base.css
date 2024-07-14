@@ -2370,10 +2370,14 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header {
-  display: grid;
+  /* display: grid;
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
+  align-items: center; */
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--custom-border-color);
 }
 
 @media screen and (max-width: 749px) {

@@ -17,11 +17,12 @@
   }
 {%- endstyle -%}
 
-<div class="work page-width section-{{ section.id }}-padding">
+<div class="work  section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="page-width">
   <h1 class="title--primary scroll-trigger animate--fade-in">
     {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
   </h1>
-  <div class="blog-articles">
+  <div class="blog-articles color-{{ section.settings.color_scheme }}">
 
     <div
       class="blog-articles__article article scroll-trigger animate--slide-in"
@@ -35,7 +36,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }} 
         "
           style="--ratio-percent: 56.26666666666666%;"
         >
@@ -122,7 +123,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -209,7 +210,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -296,7 +297,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -383,7 +384,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -470,7 +471,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -557,7 +558,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -644,7 +645,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -731,7 +732,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -818,7 +819,7 @@
           card--card
           article-card__image--medium
           card--media
-          color-background-1 gradient
+          color-background-1 gradient color-{{ section.settings.color_scheme }}
         "
           style="--ratio-percent: 56.26666666666666%;"
          >
@@ -892,13 +893,19 @@
         </div>
       </div>
     </div>
-
+</div>
 </div>
 
 {% schema %}
   {
     "name": "Work",
     "settings": [
+      {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
       {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
