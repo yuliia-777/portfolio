@@ -101,6 +101,11 @@
         {%- endfor -%} {% endcomment %}
         {% comment %}  {% endcomment %}
     <li>
+      <a class="header__menu-item list-menu__item link link--text focus-inset" style="padding: 1.2rem; text-decoration: none;" href="{% if shop.locale == 'uk' %}/uk{% endif %}">
+        {% if shop.locale == 'uk' %}Головна{% else %}Home{% endif %}
+      </a>
+    </li>
+    <li>
       <a class="header__menu-item list-menu__item link link--text focus-inset" style="padding: 1.2rem; text-decoration: none;" href="{% if shop.locale == 'uk' %}/uk{% endif %}/pages/portfolio">
         {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
       </a>

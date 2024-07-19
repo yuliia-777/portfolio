@@ -346,10 +346,10 @@
           {%- endif -%}
 
           <a class="caption-large text-body" href="https://www.linkedin.com/in/yuliia-aleksiienko?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
-            Linkedin
+            {% if shop.locale == 'uk' %}Захантити на {% else %}Hire on {% endif %}Linkedin
           </a>
           <a class="caption-large" href="https://www.upwork.com/freelancers/~01a3dbef6c702b2f36?utm_source=google&utm_medium=portfolio&utm_campaign=click" target="_blank" rel="noopener">
-            Upwork
+            {% if shop.locale == 'uk' %}Захантити на {% else %}Hire on {% endif %}Upwork
           </a>
         </div>
       </div>
