@@ -1,11 +1,18 @@
 .divider {
-  overflow: hidden;
-  padding: 22px 0;
+  overflow: auto;
+  width: inherit;
   border-top: 1px solid var(--custom-border-color);
   border-bottom: 1px solid var(--custom-border-color);
 }
 
+.divider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 .divider-text {
+  width: max-content;
   white-space: nowrap;
   margin: 0;
 }

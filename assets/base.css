@@ -103,6 +103,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .page-width.drawer-menu {
   max-width: 100%;
 }
@@ -806,10 +810,6 @@ summary::-webkit-details-marker {
   gap: 1rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
-}
-
-.title--primary {
-  margin: 4rem 0;
 }
 
 .title-wrapper--self-padded-tablet-down,

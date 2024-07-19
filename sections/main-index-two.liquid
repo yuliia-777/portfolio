@@ -21,18 +21,31 @@
       src="{{ section.settings.image | image_url: width: 2080 }}"
       alt="{{ section.settings.image.alt | escape }}"
       loading="lazy">
-    <h1 class="main-index-two__title">
-      {% if shop.locale == 'uk' %}
-        <br>Юлія Алексієнко<br><br>
-        Фронтенд розробниця<br/>на Shopify<br>
-      {% else %}
-        <br>Yuliia Aleksiienko<br><br>
-        Your Shopify Developer<br>
-      {% endif %}
-    </h1>
-    {% comment %} <p class="main-index-two__text">
-      Make your business more powerfull and successful
-    </p> {% endcomment %}
+    <div class="main-index-two-block">
+      <div class="main-index-two__headings">
+        <h1 class="main-index-two__title">
+          {% if shop.locale == 'uk' %}
+            <br>Юлія Алексієнко<br>
+            Фронтенд розробниця <br class="large-up-hide"/>на Шопіфай<br>
+          {% else %}
+            <br>Yuliia Aleksiienko<br>
+            Your Shopify Developer<br>
+          {% endif %}
+        </h1>
+        <h5 class="main-index-two__text text-body">
+          {%- if shop.locale == 'uk' -%}
+            Зробіть свій бізнес більш ефективним та успішним за допомогою рішень Shopify, які принесуть вам більше клієнтів.
+          {%- else -%}
+            Make your business more powerful and successful with Shopify solutions that will bring you more customers.
+          {%- endif -%}
+        </h5>
+      </div>
+      <img 
+        class="main-index-two__img main-index-two__avatar"
+        src="{{ section.settings.image_2 | image_url: width: 720 }}"
+        alt="{{ section.settings.image_2.alt | escape }}"
+        loading="lazy">
+    </div>
   </div>
 </div>
 
@@ -41,16 +54,22 @@
     "name": "Main index two",
     "settings": [
       {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
-    },
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
       {
         "type": "image_picker",
         "id": "image",
         "label": "Image"
-      }, {
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Avatar"
+      },
+      {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
       }, {

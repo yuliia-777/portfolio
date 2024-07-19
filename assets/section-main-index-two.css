@@ -1,3 +1,7 @@
+.index- {
+  overflow-x: hidden;
+}
+
 .main-index-two {
   text-align: center;
 }
@@ -5,26 +9,47 @@
 .main-index-two__img {
   display: block;
   width: 90%;
-  margin: 60px auto 40px;
+  margin: 50px auto 30px;
 }
 
-.main-index-two__title,
-.main-index-two__text {
+.main-index-two__avatar {
+  max-width: 360px;
+}
+
+.main-index-two__headings {
   width: 95%;
-  margin: 40px auto 60px;
+  margin: 30px auto 50px;
 }
 
 @media screen and (min-width: 480px) {
   .main-index-two__img {
-    width: 70%;
+    width: 65%;
   }
 
-  .main-index-two__title,
-  .main-index-two__text {
+  .main-index-two__headings {
     width: 70%;
   }
+}
 
-  .main-index-two__title br {
-    display: none;
+@media screen and (min-width: 990px) {
+  .main-index-two-block {
+    width: 70%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .main-index-two__headings {
+    width: 55%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .main-index-two__avatar {
+    max-width: 68%;
   }
 }
