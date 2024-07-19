@@ -23,4 +23,8 @@
   .main-index-two__text {
     width: 70%;
   }
+
+  .main-index-two__title br {
+    display: none;
+  }
 }
