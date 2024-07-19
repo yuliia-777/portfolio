@@ -13,9 +13,9 @@
       "type": "divider",
       "settings": {
         "color_scheme": "scheme-ece64925-0259-44bf-9fd5-1159b66baf66",
-        "text": "<h4>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices <\/em>Customization <em>Experience<\/em> Maintenance <em>Flexibility<\/em> Development <em>Quality<\/em> Best <em>practices<\/em><\/h4>",
-        "padding_top": 16,
-        "padding_bottom": 16
+        "text": "<h3>Customization <em> Experience <\/em> Maintenance <em> Flexibility <\/em> Development <em> Quality <\/em> Best practices <em> Customization <\/em> Experience <em> Maintenance <\/em> Flexibility <em> Development <\/em> Quality <em> Best practices <\/em> Customization <em> Experience <\/em> Maintenance <em> Flexibility <\/em> Development <em> Quality <\/em> Best practices <em> Customization <\/em> Experience <em> Maintenance <\/em> Flexibility <em> Development <\/em> Quality <em> Best practices <\/em> Customization <em> Experience <\/em> Maintenance <em> Flexibility <\/em> Development <em> Quality <\/em> Best practices<\/h3>",
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     }
   },

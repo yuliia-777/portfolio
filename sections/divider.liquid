@@ -16,7 +16,12 @@
 
 <div class="divider section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="divider-text">
-    {{ section.settings.text }}
+    {% if shop.locale == 'uk' %}
+      <h3>Кастомізація <em> Досвід </em> Супровід сайтів <em> Гнучкість </em> Розробка <em> Якість </em> Новітні підходи до роботи <em> Кастомізація </em> Досвід <em> Супровід сайтів < \/em> Гнучкість <em> Розробка </em> Якість <em> Найкращі практики </em> Кастомізація <em> Досвід </em> Супровід сайтів <em> Гнучкість </em> Розробка <em> Якість </em> Новітні підходи до роботи <em> Кастомізація </em> Досвід <em> Супровід сайтів </em> Гнучкість <em> Розробка </em> Якість <em> Найкращі практики </em> Кастомізація <em > Досвід </em> Супровід сайтів <em> Гнучкість </em> Розробка <em> Якість </em> Найкращі практики<\/h3>
+    {% else %}
+      <h3>Customization <em> Experience </em> Maintenance <em> Flexibility </em> Development <em> Quality </em> Best practices <em> Customization </em> Experience <em> Maintenance </em> Flexibility <em> Development </em> Quality <em> Best practices </em> Customization <em> Experience </em> Maintenance <em> Flexibility </em> Development <em> Quality </em> Best practices <em> Customization </em> Experience <em> Maintenance </em> Flexibility <em> Development </em> Quality <em> Best practices </em> Customization <em> Experience </em> Maintenance <em> Flexibility </em> Development <em> Quality </em> Best practices<\/h3>
+    {% endif %}
+    {% comment %} {{ section.settings.text }} {% endcomment %}
   </div>
 </div>
 

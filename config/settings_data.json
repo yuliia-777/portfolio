@@ -1,11 +1,11 @@
 {
   "current": {
     "logo_width": 140,
-    "favicon": "shopify:\/\/shop_images\/logo_ya_25f51e9e-af29-4f30-b40a-d385432574d7.svg",
-    "type_header_font": "montserrat_n6",
-    "heading_scale": 110,
+    "favicon": "shopify:\/\/shop_images\/logo_mint.svg",
+    "type_header_font": "newsreader_n4",
+    "heading_scale": 120,
     "type_body_font": "lato_n4",
-    "body_scale": 105,
+    "body_scale": 120,
     "page_width": 1400,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 28,
@@ -204,12 +204,12 @@
       },
       "scheme-ece64925-0259-44bf-9fd5-1159b66baf66": {
         "settings": {
-          "background": "#a87e5f",
+          "background": "#564816",
           "background_gradient": "",
-          "text": "#f5eadd",
-          "button": "#a87e5f",
-          "button_label": "#f5eadd",
-          "secondary_button_label": "#a87e5f",
+          "text": "#eefeef",
+          "button": "#564816",
+          "button_label": "#eefeef",
+          "secondary_button_label": "#564816",
           "shadow": "#0e1b4d"
         }
       }

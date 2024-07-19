@@ -22,11 +22,17 @@
       alt="{{ section.settings.image.alt | escape }}"
       loading="lazy">
     <h1 class="main-index-two__title">
-      Make your business more powerfull and successful
+      {% if shop.locale == 'uk' %}
+        <br>Юлія Алексієнко<br><br>
+        Фронтенд розробниця<br/>на Shopify<br>
+      {% else %}
+        <br>Yuliia Aleksiienko<br><br>
+        Your Shopify Developer<br>
+      {% endif %}
     </h1>
-    <p class="main-index-two__text">
-      Go Inspired
-    </p>
+    {% comment %} <p class="main-index-two__text">
+      Make your business more powerfull and successful
+    </p> {% endcomment %}
   </div>
 </div>
 
