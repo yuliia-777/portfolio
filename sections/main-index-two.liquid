@@ -17,11 +17,14 @@
 <div class="main-index account section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="main-index-two">
     <img
-      class="main-index-two__img"
-      src="{{ section.settings.image | image_url: width: 2080 }}"
-      alt="{{ section.settings.image.alt | escape }}"
-      loading="lazy">
-    <div class="main-index-two-block">
+      style="--animation-order: 1;"
+      class="main-index-two__img scroll-trigger animate--slide-in"
+      data-cascade=""
+      src="{{ 'make-your-business-more-successful.png' |  file_img_url: '1233x' }}"
+      width="1233"
+      height="283"
+      alt="Make your business more powerful and successful with Shopify solutions">
+    <div class="main-index-two-block scroll-trigger animate--slide-in" style="--animation-order: 2;" data-cascade="">
       <div class="main-index-two__headings">
         <h1 class="main-index-two__title">
           {% if shop.locale == 'uk' %}
@@ -43,8 +46,9 @@
       <img 
         class="main-index-two__img main-index-two__avatar"
         src="{{ section.settings.image_2 | image_url: width: 720 }}"
-        alt="{{ section.settings.image_2.alt | escape }}"
-        loading="lazy">
+        width="360"
+        height="360"
+        alt="{{ section.settings.image_2.alt | escape }}">
     </div>
   </div>
 </div>
@@ -58,11 +62,6 @@
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "background-1"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
       },
       {
         "type": "image_picker",

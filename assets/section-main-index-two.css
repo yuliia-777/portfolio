@@ -9,6 +9,7 @@
 .main-index-two__img {
   display: block;
   width: 90%;
+  height: auto;
   margin: 50px auto 30px;
 }
 

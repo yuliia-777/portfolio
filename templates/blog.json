@@ -7,8 +7,8 @@
         "layout": "grid",
         "show_image": true,
         "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
+        "show_date": false,
+        "show_author": true,
         "padding_top": 60,
         "padding_bottom": 60
       }
