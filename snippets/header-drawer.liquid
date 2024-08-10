@@ -108,7 +108,7 @@
                       </div>
                     </details>
                   {%- else -%}
-                    {% comment %} <a
+                    <a
                       id="HeaderDrawer-{{ link.handle }}"
                       href="{{ link.url }}"
                       class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
@@ -117,7 +117,7 @@
                       {% endif %}
                     >
                       {{ link.title | escape }}
-                    </a> {% endcomment %}
+                    </a>
                   {%- endif -%}
                 </li>
               {%- endfor -%}

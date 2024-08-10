@@ -2803,22 +2803,30 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
+  position: relative;
   padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+}
+
+.header__menu-item::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 3px;
+  background-color: rgb(var(--color-foreground));
+  transition: width var(--duration-long) ease;
 }
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
 }
 
-.header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+.header__menu-item:hover::before {
+  width: 100%;
+  transition: width var(--duration-long) ease;
 }
 
 details[open] > .header__menu-item {
@@ -2836,8 +2844,6 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
@@ -3506,4 +3512,11 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+
+
+/* CUSTOM STYLES */
+.shopify-policy__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
