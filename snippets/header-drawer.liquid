@@ -121,30 +121,6 @@
                   {%- endif -%}
                 </li>
               {%- endfor -%}
-              <li>
-                <a
-                  href="{% if shop.locale == 'uk' %}/uk{% endif %}"
-                  class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                >
-                  {% if shop.locale == 'uk' %}Головна{% else %}Home{% endif %}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{% if shop.locale == 'uk' %}/uk{% endif %}/pages/portfolio"
-                  class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                >
-                  {% if shop.locale == 'uk' %}Портфоліо{% else %}Portfolio{% endif %}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{% if shop.locale == 'uk' %}/uk{% endif %}/blogs/e-commerce-nest"
-                  class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                >
-                  {% if shop.locale == 'uk' %}Статті{% else %}Blog{% endif %}
-                </a>
-              </li>
             </ul>
           </nav>
           <div class="menu-drawer__utility-links">
