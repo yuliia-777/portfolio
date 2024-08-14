@@ -1,5 +1,30 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
+    "1723664699c8702648": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_preview_badge_RMaBLt": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_RMaBLt"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -97,8 +122,25 @@
         "padding_bottom": 60
       }
     },
+    "1723664732b62496d1": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_i7DiWx": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_i7DiWx"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -155,6 +197,7 @@
         "template--21647616901406__3c34bb27-3643-45b9-8c62-cd22038fa6a1-quantity_selector-1",
         "template--21647616901406__3c34bb27-3643-45b9-8c62-cd22038fa6a1-buy_buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "product": "майстер-клас-від-шефа",
         "color_scheme": "",
@@ -172,7 +215,9 @@
     }
   },
   "order": [
+    "1723664699c8702648",
     "main",
+    "1723664732b62496d1",
     "related-products",
     "3c34bb27-3643-45b9-8c62-cd22038fa6a1"
   ]
